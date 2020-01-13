@@ -6,6 +6,7 @@
     </PropertyGroup>
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Rocket.Surgery.AspNetCore" />
         <PackageReference Include="Swashbuckle.AspNetCore" />
         <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" />
         <!--        <PackageReference Include="Swashbuckle.AspNetCore.Filters" />-->
@@ -13,7 +14,5 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" />
-        <PackageReference Include="NodaTime" />
-        <PackageReference Include="NodaTime.Serialization.SystemTextJson" />
     </ItemGroup>
 </Project>

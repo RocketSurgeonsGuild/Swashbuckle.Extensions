@@ -1,8 +1,12 @@
 ﻿using System;
 using JetBrains.Annotations;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Linq;
+using Newtonsoft.Json.Serialization;
+using NodaTime;
 using Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson;
 using Rocket.Surgery.Conventions;
 using Rocket.Surgery.Extensions.DependencyInjection;
@@ -31,7 +35,7 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson
             {
                 throw new ArgumentNullException(nameof(context));
             }
-
+            
             context.Services.AddSwaggerGenNewtonsoftSupport();
             context.Services.Configure<SwaggerGenOptions>(
                 options =>

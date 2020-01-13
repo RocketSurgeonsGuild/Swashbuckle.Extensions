@@ -10,6 +10,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
+using NodaTime;
+using NodaTime.Serialization.SystemTextJson;
 using Rocket.Surgery.AspNetCore.Swashbuckle;
 using Rocket.Surgery.Conventions;
 using Rocket.Surgery.Extensions.DependencyInjection;
@@ -101,14 +103,12 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle
                     }
                 }
             );
-            
+
             AddFluentValdiationRules(context.Services);
         }
 
         private static void AddFluentValdiationRules(IServiceCollection services)
         {
-            
-
             services.AddSingleton(
                 new FluentValidationRule("NotEmpty")
                 {

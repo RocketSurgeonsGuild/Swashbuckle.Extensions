@@ -6,8 +6,8 @@
     </PropertyGroup>
     <ItemGroup>
         <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Rocket.Surgery.AspNetCore.NewtonsoftJson" />
         <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" />
         <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" />
-        <PackageReference Include="NodaTime.Serialization.JsonNet" />
     </ItemGroup>
 </Project>
