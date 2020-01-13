@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = ".build", ".build\.build.csp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{E3DCB78E-EE06-4EA3-88AC-762D8910387C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Operational.Swashbuckle", "src\Operational.Swashbuckle\Rocket.Surgery.Operational.Swashbuckle.csproj", "{FDDF0C77-59A1-4E5B-B8D4-7808BA8EF2B4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.AspNetCore.Swashbuckle", "src\Swashbuckle\Rocket.Surgery.AspNetCore.Swashbuckle.csproj", "{FDDF0C77-59A1-4E5B-B8D4-7808BA8EF2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.Operational.Swashbuckle.NewtonsoftJson", "src\Operational.Swashbuckle.NewtonsoftJson\Rocket.Surgery.Operational.Swashbuckle.NewtonsoftJson.csproj", "{40C31D16-BDED-47D2-B4AD-20DB1DE4CEE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson", "src\Swashbuckle.NewtonsoftJson\Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson.csproj", "{40C31D16-BDED-47D2-B4AD-20DB1DE4CEE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

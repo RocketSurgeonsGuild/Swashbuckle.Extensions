@@ -1,17 +1,16 @@
 ﻿using System;
 using JetBrains.Annotations;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Linq;
+using Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson;
 using Rocket.Surgery.Conventions;
 using Rocket.Surgery.Extensions.DependencyInjection;
-using Rocket.Surgery.Operational.Swashbuckle.NewtonsoftJson;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 [assembly: Convention(typeof(SwashbuckleNewtonsoftJsonConvention))]
 
-namespace Rocket.Surgery.Operational.Swashbuckle.NewtonsoftJson
+namespace Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson
 {
     /// <summary>
     /// ValidationConvention.

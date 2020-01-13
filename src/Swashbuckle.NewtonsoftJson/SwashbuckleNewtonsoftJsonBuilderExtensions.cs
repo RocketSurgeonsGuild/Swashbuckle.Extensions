@@ -1,6 +1,6 @@
 ﻿using System;
 using JetBrains.Annotations;
-using Rocket.Surgery.Operational.Swashbuckle.NewtonsoftJson;
+using Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson;
 
 // ReSharper disable once CheckNamespace
 namespace Rocket.Surgery.Conventions

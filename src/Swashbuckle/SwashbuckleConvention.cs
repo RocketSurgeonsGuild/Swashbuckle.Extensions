@@ -8,19 +8,18 @@ using JetBrains.Annotations;
 using MicroElements.Swashbuckle.FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
+using Rocket.Surgery.AspNetCore.Swashbuckle;
 using Rocket.Surgery.Conventions;
 using Rocket.Surgery.Extensions.DependencyInjection;
-using Rocket.Surgery.Operational.Swashbuckle;
+using Rocket.Surgery.Extensions.FluentValidation;
 using Swashbuckle.AspNetCore.Swagger;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using Rocket.Surgery.Extensions.FluentValidation;
 
 [assembly: Convention(typeof(SwashbuckleConvention))]
 
-namespace Rocket.Surgery.Operational.Swashbuckle
+namespace Rocket.Surgery.AspNetCore.Swashbuckle
 {
     /// <summary>
     /// ValidationConvention.
@@ -83,8 +82,8 @@ namespace Rocket.Surgery.Operational.Swashbuckle
                     options.CustomSchemaIds(
                         type =>
                         {
-                            if (type == typeof(FluentValidation.Severity))
-                                return $"Validation{nameof(FluentValidation.Severity)}";
+                            if (type == typeof(global::FluentValidation.Severity))
+                                return $"Validation{nameof(global::FluentValidation.Severity)}";
                             return type.IsNested ? type.DeclaringType?.Name + type.Name : type.Name;
                         }
                     );
