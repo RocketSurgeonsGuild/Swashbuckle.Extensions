@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+        <AssemblyTitle>Rocket.Surgery Fluent Validation for ASP.NET Core for MediatR</AssemblyTitle>
+        <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
+    </PropertyGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+        <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" />
+        <!--        <PackageReference Include="Swashbuckle.AspNetCore.Filters" />-->
+        <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" />
+        <PackageReference Include="NodaTime" />
+        <PackageReference Include="NodaTime.Serialization.SystemTextJson" />
+    </ItemGroup>
+</Project>
