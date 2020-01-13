@@ -38,7 +38,7 @@
     <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
     <PackageReference Update="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.0-beta.37" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0-beta.37" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
     <PackageReference Update="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
     <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
