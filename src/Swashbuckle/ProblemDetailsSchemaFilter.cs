@@ -12,6 +12,10 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle {
                 schema.AdditionalPropertiesAllowed = true;
                 schema.Properties.Remove(nameof(ProblemDetails.Extensions));
                 schema.Properties.Remove("extensions");
+                if (schema.Properties.TryGetValue("validationErrors", out var v)) {
+                    schema.Properties["errors"] = v;
+                    schema.Properties.Remove("validationErrors");
+                }
             }
         }
     }
