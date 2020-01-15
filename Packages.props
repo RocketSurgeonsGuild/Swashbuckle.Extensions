@@ -45,7 +45,7 @@
     <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0-rc5" />
     <PackageReference Update="Swashbuckle.AspNetCore.Swagger" Version="5.0.0-rc5" />
     <PackageReference Update="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0-rc5" />
-    <PackageReference Update="Swashbuckle.AspNetCore.SwaggerUi" Version="5.0.0-rc5" />
+    <PackageReference Update="Swashbuckle.AspNetCore.SwaggerUi" Version="5.0.0" />
     <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.0.0-rc5" />
     <!-- <PackageReference Update="Swashbuckle.AspNetCore.Filters" Version="5.0.0-rc9" /> -->
     <PackageReference Update="MicroElements.Swashbuckle.FluentValidation" Version="3.0.0-rc.4" />
