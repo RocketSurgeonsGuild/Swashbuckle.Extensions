@@ -2,7 +2,7 @@
 <Project>
   <ItemGroup>
     <GlobalPackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.2.0" />
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.1.0" />
+    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.2.0" />
     <GlobalPackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.2.0" Condition="'$(MSBuildProjectName)'!='.build'" />
     <GlobalPackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.2.0" />
     <GlobalPackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.2.0" />
@@ -37,19 +37,19 @@
     <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.7" />
     <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
     <PackageReference Update="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
-    <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.0-beta.37" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.0-beta.37" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.0-beta.37" />
+    <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.23" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1-beta.23" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1-beta.23" />
     <PackageReference Update="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
-    <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0-rc5" />
-    <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0-rc5" />
-    <PackageReference Update="Swashbuckle.AspNetCore.Swagger" Version="5.0.0-rc5" />
-    <PackageReference Update="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0-rc5" />
-    <PackageReference Update="Swashbuckle.AspNetCore.SwaggerUi" Version="5.0.0-rc5" />
-    <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.0.0-rc5" />
+    <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore.Swagger" Version="5.0.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore.SwaggerGen" Version="5.0.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore.SwaggerUi" Version="5.0.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.0.0" />
     <!-- <PackageReference Update="Swashbuckle.AspNetCore.Filters" Version="5.0.0-rc9" /> -->
     <PackageReference Update="MicroElements.Swashbuckle.FluentValidation" Version="3.0.0-rc.4" />
-    <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0-rc5" />
+    <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="Rocket.Surgery.Extensions.Testing.FakeItEasy" Version="3.3.0" />
