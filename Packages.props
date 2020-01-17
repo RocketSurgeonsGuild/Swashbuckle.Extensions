@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project>
   <ItemGroup>
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.2.0" />
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.2.0" />
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.2.0" Condition="'$(MSBuildProjectName)'!='.build'" />
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.2.0" />
-    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.2.0" />
+    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.CI" Version="0.3.0" />
+    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.GitVersion" Version="0.3.0" />
+    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.JetBrains.Annotations" Version="0.3.0" Condition="'$(MSBuildProjectName)'!='.build'" />
+    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.Metadata" Version="0.3.0" />
+    <GlobalPackageReference Include="Rocket.Surgery.MSBuild.SourceLink" Version="0.3.0" />
     <GlobalPackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8" />
     <!-- <GlobalPackageReference Include="Microsoft.CodeAnalysis.PublicApiAnalyzers" Version="2.9.8" /> -->
     <GlobalPackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" />
@@ -17,7 +17,7 @@
     <PackageReference Update="JetBrains.ReSharper.CommandLineTools" Version="2019.3.1" />
     <PackageReference Update="Nuke.Common" Version="0.23.6" />
     <PackageReference Update="ReportGenerator" Version="4.4.2" />
-    <PackageReference Update="Rocket.Surgery.Nuke.DotNetCore" Version="0.11.0" />
+    <PackageReference Update="Rocket.Surgery.Nuke.DotNetCore" Version="0.11.1" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="System.Diagnostics.DiagnosticSource" Version="4.7.0" />
@@ -27,19 +27,19 @@
     <PackageReference Update="NodaTime.Serialization.SystemTextJson" Version="1.0.0-beta01" />
     <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.3.0" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.0" />
-    <PackageReference Update="Rocket.Surgery.Conventions" Version="9.0.7" />
-    <PackageReference Update="Rocket.Surgery.Conventions" Version="9.0.7" />
-    <PackageReference Update="Rocket.Surgery.Conventions.Abstractions" Version="9.0.7" />
+    <PackageReference Update="Rocket.Surgery.Conventions" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Conventions" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Conventions.Abstractions" Version="9.1.0" />
     <PackageReference Update="Rocket.Surgery.Extensions" Version="2.2.0" />
     <PackageReference Update="Rocket.Surgery.Extensions.Abstractions" Version="2.2.0" />
-    <PackageReference Update="Rocket.Surgery.Extensions.CommandLine" Version="9.0.7" />
-    <PackageReference Update="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="9.0.7" />
-    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection" Version="9.0.7" />
-    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.0.7" />
+    <PackageReference Update="Rocket.Surgery.Extensions.CommandLine" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.1.0" />
     <PackageReference Update="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
-    <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.23" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1-beta.23" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1-beta.23" />
+    <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.38" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1-beta.38" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1-beta.38" />
     <PackageReference Update="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
     <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0" />
     <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
@@ -56,8 +56,8 @@
     <PackageReference Update="Bogus" Version="28.4.4" />
     <PackageReference Update="coverlet.collector" Version="1.2.0" />
     <PackageReference Update="coverlet.msbuild" Version="2.8.0" />
-    <PackageReference Update="FakeItEasy" Version="5.5.0" />
-    <PackageReference Update="FakeItEasy.Analyzer.CSharp" Version="5.5.0" />
+    <PackageReference Update="FakeItEasy" Version="6.0.0" />
+    <PackageReference Update="FakeItEasy.Analyzer.CSharp" Version="6.0.0" />
     <PackageReference Update="FluentAssertions" Version="5.10.0" />
     <PackageReference Update="FluentAssertions.Analyzers" Version="0.11.4" />
     <PackageReference Update="Microsoft.NET.Test.Sdk" Version="16.4.0" />
