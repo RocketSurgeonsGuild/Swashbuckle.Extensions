@@ -29,7 +29,7 @@
     <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.0" />
     <PackageReference Update="Rocket.Surgery.Conventions" Version="9.1.0" />
     <PackageReference Update="Rocket.Surgery.Conventions" Version="9.1.0" />
-    <PackageReference Update="Rocket.Surgery.Conventions.Abstractions" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Conventions.Abstractions" Version="9.1.1" />
     <PackageReference Update="Rocket.Surgery.Extensions" Version="2.2.0" />
     <PackageReference Update="Rocket.Surgery.Extensions.Abstractions" Version="2.2.0" />
     <PackageReference Update="Rocket.Surgery.Extensions.CommandLine" Version="9.1.0" />
