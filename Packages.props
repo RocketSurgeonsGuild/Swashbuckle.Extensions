@@ -35,7 +35,7 @@
     <PackageReference Update="Rocket.Surgery.Extensions.CommandLine" Version="9.1.1" />
     <PackageReference Update="Rocket.Surgery.Extensions.CommandLine.Abstractions" Version="9.1.0" />
     <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection" Version="9.1.1" />
-    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.1.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.DependencyInjection.Abstractions" Version="9.1.1" />
     <PackageReference Update="Rocket.Surgery.Extensions.AutoMapper" Version="7.0.3" />
     <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.38" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1-beta.38" />
