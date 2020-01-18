@@ -40,7 +40,7 @@
     <PackageReference Update="Rocket.Surgery.Extensions.FluentValidation" Version="6.3.1-beta.51" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1-beta.51" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1-beta.51" />
-    <PackageReference Update="Rocket.Surgery.Extensions.MediatR" Version="7.1.0" />
+    <PackageReference Update="Rocket.Surgery.Extensions.MediatR" Version="7.1.1" />
     <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0" />
     <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
     <PackageReference Update="Swashbuckle.AspNetCore.Swagger" Version="5.0.0" />
