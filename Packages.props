@@ -27,7 +27,7 @@
     
     <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.3.0" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1-beta.51" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1-beta.51" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.0" />
     
     
