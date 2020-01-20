@@ -8,6 +8,7 @@ using JetBrains.Annotations;
 using MicroElements.Swashbuckle.FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
 using NodaTime;
@@ -93,13 +94,14 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle
                     foreach (var item in Directory.EnumerateFiles(AppContext.BaseDirectory, "*.xml")
                        .Where(x => File.Exists(Path.ChangeExtension(x, "dll"))))
                     {
-                        options.IncludeXmlComments(
-                            () =>
-                            {
-                                using var stream = File.OpenRead(item)!;
-                                return new XPathDocument(stream);
-                            }
-                        );
+                        try
+                        {
+                            options.IncludeXmlComments(item);
+                        }
+                        catch (Exception e)
+                        {
+                            context.Logger.LogDebug(e, "Error adding XML comments from {XmlFile}", item);
+                        }
                     }
                 }
             );
@@ -152,8 +154,8 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle
                             )
                            .FirstOrDefault();
                         if (propertyType != null &&
-                            ( propertyType.IsValueType && Nullable.GetUnderlyingType(propertyType) == null ||
-                                propertyType.IsEnum ))
+                            (propertyType.IsValueType && Nullable.GetUnderlyingType(propertyType) == null ||
+                                propertyType.IsEnum))
                         {
                             context.Schema.Required.Add(context.PropertyKey);
                             context.Schema.Properties[context.PropertyKey].Nullable = false;
@@ -171,8 +173,8 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle
                     Apply = context =>
                     {
                         context.Schema.Properties[context.PropertyKey].Nullable =
-                            !( context.PropertyValidator is INotNullValidator ||
-                                context.PropertyValidator is INotEmptyValidator );
+                            !(context.PropertyValidator is INotNullValidator ||
+                                context.PropertyValidator is INotEmptyValidator);
                     }
                 }
             );
