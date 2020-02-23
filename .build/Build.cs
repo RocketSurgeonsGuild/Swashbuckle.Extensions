@@ -7,6 +7,12 @@ using Rocket.Surgery.Nuke.DotNetCore;
 [PublicAPI]
 [CheckBuildProjectConfigurations]
 [UnsetVisualStudioEnvironmentVariables]
+[AzurePipelinesSteps(
+    InvokedTargets = new[] { nameof(Restore), nameof(Build), nameof(Test), nameof(Pack) },
+    NonEntryTargets = new[] { nameof(BuildVersion), nameof(Generate_Code_Coverage_Reports) },
+    ExcludedTargets = new[] { nameof(Clean), nameof(Restore), nameof(DotnetToolRestore) },
+    Parameters = new[] { nameof(CoverageDirectory), nameof(ArtifactsDirectory), nameof(Verbosity), nameof(Configuration) }
+)]
 [PackageIcon(
     "https://raw.githubusercontent.com/RocketSurgeonsGuild/graphics/master/png/social-square-thrust-rounded.png"
 )]
@@ -30,7 +36,7 @@ internal class Solution : DotNetCoreBuild, IDotNetCoreBuild
        .DependsOn(Pack);
 
     public Target Restore => _ => _.With(this, DotNetCoreBuild.Restore);
- 
+
     public Target Build => _ => _.With(this, DotNetCoreBuild.Build);
 
     public Target Test => _ => _.With(this, DotNetCoreBuild.Test);
