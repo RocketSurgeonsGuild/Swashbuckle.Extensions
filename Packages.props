@@ -27,7 +27,7 @@
     <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.2" />
     <PackageReference Update="Swashbuckle.AspNetCore" Version="5.0.0" />
     <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.0.0" />
-    <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.0.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.1.0" />
     <!-- <PackageReference Update="Swashbuckle.AspNetCore.Filters" Version="5.0.0-rc9" /> -->
   </ItemGroup>
   <ItemGroup></ItemGroup>
