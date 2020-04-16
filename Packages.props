@@ -25,7 +25,7 @@
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.2" />
-    <PackageReference Update="Swashbuckle.AspNetCore" Version="5.3.0" />
+    <PackageReference Update="Swashbuckle.AspNetCore" Version="5.3.1" />
     <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.3.0" />
     <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.3.1" />
     <!-- <PackageReference Update="Swashbuckle.AspNetCore.Filters" Version="5.0.0-rc9" /> -->
