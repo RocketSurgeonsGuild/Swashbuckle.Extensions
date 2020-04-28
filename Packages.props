@@ -20,7 +20,7 @@
     <PackageReference Update="Rocket.Surgery.Nuke.DotNetCore" Version="0.13.5" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Update="MicroElements.Swashbuckle.FluentValidation" Version="3.1.0" />
+    <PackageReference Update="MicroElements.Swashbuckle.FluentValidation" Version="3.1.1" />
     <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.3.2" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
