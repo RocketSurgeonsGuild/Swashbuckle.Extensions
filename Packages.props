@@ -21,10 +21,10 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Update="MicroElements.Swashbuckle.FluentValidation" Version="3.2.0" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.3.2" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation" Version="6.3.1" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.FluentValidation.NewtonsoftJson" Version="6.3.1" />
-    <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.2" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.3.3-beta.1" />
+    <PackageReference Update="Rocket.Surgery.Conventions.AspNetCore.FluentValidation" Version="7.0.0-beta.1" />
+    <PackageReference Update="Rocket.Surgery.Conventions.AspNetCore.FluentValidation.NewtonsoftJson" Version="7.0.0-beta.1" />
+    <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.3-beta.1" />
     <PackageReference Update="Swashbuckle.AspNetCore" Version="5.5.1" />
     <PackageReference Update="Swashbuckle.AspNetCore.Newtonsoft" Version="5.5.1" />
     <PackageReference Update="Swashbuckle.AspNetCore.ReDoc" Version="5.5.1" />
@@ -45,5 +45,4 @@
     <PackageReference Update="xunit.runner.visualstudio" Version="2.4.2" />
     <PackageReference Update="XunitXml.TestLogger" Version="2.1.26" />
   </ItemGroup>
-  <Import Project="$(MSBuildThisFileDirectory)/$(LegacySupportPackagesProps)" Condition="Exists('$(MSBuildThisFileDirectory)/$(LegacySupportPackagesProps)')" />
 </Project>
