@@ -9,7 +9,7 @@ using Newtonsoft.Json.Serialization;
 using NodaTime;
 using Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson;
 using Rocket.Surgery.Conventions;
-using Rocket.Surgery.Extensions.DependencyInjection;
+using Rocket.Surgery.Conventions.DependencyInjection;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 [assembly: Convention(typeof(SwashbuckleNewtonsoftJsonConvention))]
@@ -18,9 +18,9 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson
 {
     /// <summary>
     /// ValidationConvention.
-    /// Implements the <see cref="Rocket.Surgery.Extensions.DependencyInjection.IServiceConvention" />
+    /// Implements the <see cref="IServiceConvention" />
     /// </summary>
-    /// <seealso cref="Rocket.Surgery.Extensions.DependencyInjection.IServiceConvention" />
+    /// <seealso cref="IServiceConvention" />
     /// <seealso cref="IServiceConvention" />
     [PublicAPI]
     public class SwashbuckleNewtonsoftJsonConvention : IServiceConvention
@@ -35,7 +35,7 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson
             {
                 throw new ArgumentNullException(nameof(context));
             }
-            
+
             context.Services.AddSwaggerGenNewtonsoftSupport();
             context.Services.Configure<SwaggerGenOptions>(
                 options =>

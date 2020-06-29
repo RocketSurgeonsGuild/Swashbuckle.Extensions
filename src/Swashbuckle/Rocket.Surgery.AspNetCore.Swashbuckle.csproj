@@ -13,6 +13,6 @@
         <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Rocket.Surgery.AspNetCore.FluentValidation" />
+        <PackageReference Include="Rocket.Surgery.Conventions.AspNetCore.FluentValidation" />
     </ItemGroup>
 </Project>
