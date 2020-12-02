@@ -22,7 +22,7 @@
   <ItemGroup>
 <!--    <PackageReference Update="MicroElements.Swashbuckle.FluentValidation" Version="3.2.0" />-->
     <PackageReference Update="Rocket.Surgery.AspNetCore" Version="0.3.3-beta.2" />
-    <PackageReference Update="Rocket.Surgery.Conventions.AspNetCore.FluentValidation" Version="7.0.0-beta.44" />
+    <PackageReference Update="Rocket.Surgery.Conventions.AspNetCore.FluentValidation" Version="7.0.0-beta.58" />
     <PackageReference Update="Rocket.Surgery.Conventions.AspNetCore.FluentValidation.NewtonsoftJson" Version="7.0.0-beta.43" />
     <PackageReference Update="Rocket.Surgery.AspNetCore.NewtonsoftJson" Version="0.3.3-beta.2" />
     <PackageReference Update="Swashbuckle.AspNetCore" Version="5.6.3" />
