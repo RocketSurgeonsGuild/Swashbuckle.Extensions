@@ -1,6 +1,7 @@
 ﻿using System;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json.Converters;
@@ -29,15 +30,17 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle.NewtonsoftJson
         /// Registers the specified context.
         /// </summary>
         /// <param name="context">The context.</param>
-        public void Register(IServiceConventionContext context)
+        /// <param name="configuration"></param>
+        /// <param name="services"></param>
+        public void Register(IConventionContext context, IConfiguration configuration, IServiceCollection services)
         {
             if (context is null)
             {
                 throw new ArgumentNullException(nameof(context));
             }
 
-            context.Services.AddSwaggerGenNewtonsoftSupport();
-            context.Services.Configure<SwaggerGenOptions>(
+            services.AddSwaggerGenNewtonsoftSupport();
+            services.Configure<SwaggerGenOptions>(
                 options =>
                 {
                     options.MapType<JToken>(
