@@ -6,6 +6,7 @@ using System.Xml.XPath;
 using FluentValidation.Validators;
 using JetBrains.Annotations;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Any;
@@ -37,14 +38,16 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle
         /// Registers the specified context.
         /// </summary>
         /// <param name="context">The context.</param>
-        public void Register(IServiceConventionContext context)
+        /// <param name="configuration"></param>
+        /// <param name="services"></param>
+        public void Register(IConventionContext context, IConfiguration configuration, IServiceCollection services)
         {
             if (context is null)
             {
                 throw new ArgumentNullException(nameof(context));
             }
 
-            context.Services.AddSwaggerGen(
+            services.AddSwaggerGen(
                 options =>
                 {
                     options.ConfigureForNodaTime();
@@ -106,10 +109,10 @@ namespace Rocket.Surgery.AspNetCore.Swashbuckle
                 }
             );
 
-            AddFluentValdiationRules(context.Services);
+            AddFluentValidationRules(services);
         }
 
-        private static void AddFluentValdiationRules(IServiceCollection services)
+        private static void AddFluentValidationRules(IServiceCollection services)
         {
             services.AddSingleton(
                 new FluentValidationRule("NotEmpty")
